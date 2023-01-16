@@ -10,19 +10,19 @@ int main()
     int *array;
 
 
-    printf("Digite dois entre 0 a 500 para a verificar se eles são primos!\n");
+    printf("Digite dois entre 0 a 500 para a verificar se eles sÃ£o primos!\n");
     n=2;
 
-    ///Guardando os números digitados na memória.
+    ///Guardando os nÃºmeros digitados na memÃ³ria.
     array= (int*)malloc(n * sizeof(int));
 
     for(i= 0; i< 2; i++){
-        printf("Insira um número:\n");
+        printf("Insira um nÃºmero:\n");
         scanf("%d", array+ i);
     }
 
-    ///Verificando se são primos
-    printf("Números primos entre 0 a 15\n");
+    ///Verificando se sÃ£o primos
+    printf("NÃºmeros primos entre 0 a 500\n");
     for(i= 0; i< n; i++){
         if(array[i] != 0 && array[i] != 1){
             if(array[i] >= 0 && array[i] <= 500){
@@ -40,7 +40,7 @@ int main()
         }
     }
     printf("\n\n");
-    printf("A soma dos números primos: %d", Soma_primos);
+    printf("A soma dos nÃºmeros primos: %d", Soma_primos);
 
 return 0;
 
